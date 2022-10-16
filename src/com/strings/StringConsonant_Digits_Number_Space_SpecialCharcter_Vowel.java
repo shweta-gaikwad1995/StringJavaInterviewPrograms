@@ -1,8 +1,10 @@
 package com.strings;
 
+import java.util.Scanner;
+
 public class StringConsonant_Digits_Number_Space_SpecialCharcter_Vowel {
 
-	public static String str = "shweta GAIKWAD123456@$";
+	public static String str = "AIEOW s 1233456 %";
 
 	public static char ch;
 	public static int consonant=0;
@@ -14,7 +16,11 @@ public class StringConsonant_Digits_Number_Space_SpecialCharcter_Vowel {
 
 	public static void main(String[] args) {
 		
+		
+		
+		
 		str=str.toLowerCase();
+		
 		
 		for(int i=0;i<str.length();i++)
 		{
@@ -23,17 +29,17 @@ public class StringConsonant_Digits_Number_Space_SpecialCharcter_Vowel {
 			{
 				if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='w')
 				{
-					consonant++;
+					vowels++;
 				}
 				else {
-					vowels++;
+					consonant++;
 				}
 			}
 			if(ch==' ')
 			{
 				space++;
 			}
-			else if(ch!=' ')
+			else if(ch=='%')
 			{
 				specialCharacter++;
 			}
